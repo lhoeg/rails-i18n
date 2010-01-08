@@ -151,6 +151,12 @@ pt-PT:
 
   activerecord:
     errors:
+      template:
+        header:
+          one:    "Não foi possível guardar {{model}}: 1 erro"
+          other:  "Não foi possível guardar {{model}}: {{count}} erros"
+        # The variable :count is also available
+        body: "Por favor, verifique os seguintes campos:"
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:

@@ -1,5 +1,6 @@
 # Bulgarian localization for Ruby on Rails 2.2+
 # by Samson Behar <master.webmaster.master@gmail.com>
+# Fixes by Yavor Ivanov, http://github.com/YavorIvanov
 #
 # Минимална локализация на приложения за поддръжка на български език.
 
@@ -117,6 +118,11 @@ bg:
         few: "{{count}} месеца"
         many: "{{count}} месеци"
         other: "{{count}} месеца"
+      almost_x_years:
+        one: "почти {{count}} година"
+        few: "почти {{count}} години"
+        many: "почти {{count}} години"
+        other: "почти {{count}} години"
       about_x_years:
         one: "около {{count}} година"
         few: "около {{count}} години"
@@ -178,6 +184,7 @@ bg:
         less_than_or_equal_to: "може да е със стойност, по-голяма или равна на {{count}}"
         odd: "може да е единствено четно"
         even: "може да е единствено нечетно"
+        record_invalid: "имаше грешки: {{errors}}"
 
   support:
     array:
@@ -189,4 +196,3 @@ bg:
       words_connector: ", "
       two_words_connector: " и "
       last_word_connector: " и "
-
