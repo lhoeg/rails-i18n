@@ -4,23 +4,26 @@
 #  - Sebastien Grosjean - ZenCocoon.com
 #  - Bruno Michel - http://github.com/nono
 #  - Tsutomu Kuroda - http://github.com/kuroda (t-kuroda@oiax.jp)
+#
+# French Canadian adjustments
+# by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
-fr:
+fr-CA:
   date:
     formats:
-      default: "%d/%m/%Y"
-      short: "%e %b"
-      long: "%e %B %Y"
+      default: "%Y-%m-%d"
+      short: "%y-%m-%d"
+      long: "%d %B %Y"
     day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
     abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]
     month_names: [~, janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
     abbr_month_names: [~, jan., fév., mar., avr., mai, juin, juil., août, sept., oct., nov., déc.]
-    order: [ :day, :month, :year ]
+    order: [ :year, :month, :day ]
 
   time:
     formats:
-      default: "%d %B %Y %H:%M:%S"
-      short: "%d %b %H:%M"
+      default: "%H:%M:%S"
+      short: "%H:%M"
       long: "%A %d %B %Y %H:%M"
     am: 'am'
     pm: 'pm'
@@ -81,7 +84,7 @@ fr:
     currency:
       format:
         format: "%n %u"
-        unit: "€"
+        unit: "$"
         separator: ","
         delimiter: " "
         precision: 2
@@ -103,8 +106,8 @@ fr:
         format: "%n %u"
         units:
           byte:
-            one:   "octet"
-            other: "octets"
+            one:   "Octet"
+            other: "Octets"
           kb: "ko"
           mb: "Mo"
           gb: "Go"
@@ -113,11 +116,11 @@ fr:
         format: "%n %u"
         units:
           unit: ""
-          thousand: "millier"
-          million: "million"
-          billion: "milliard"
-          trillion: "billion"
-          quadrillion: "million de milliards"
+          thousand: "Millier"
+          million: "Million"
+          billion: "Milliard"
+          trillion: "Mille milliard"
+          quadrillion: "Million de milliards"
 
   support:
     array:
