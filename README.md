@@ -13,19 +13,19 @@ For more information, visit [Rails Internationalization (I18n) API](http://guide
 
 Available locales are:
 
-> ar, bg, bn-IN, bs, ca, cy, cz, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
+> ar, bg, bn-IN, bs, ca, cs, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
 > es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
-> gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, ko, lo, lt, lv, mk, mn, nb,
+> gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
 > tr, uk, vi, zh-CN, zh-TW
 
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
 
-> ar, cs, cy, da, de, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et, eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, is, it, ja, ko, lv, nb, nl, pl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
+> ar, ca, cs, cy, da, de, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et, eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, is, it, ja, kn, ko, lv, nb, nl, pl, pt-BR, pt-PT, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
 
 Not-yet-ready locales are:
 
-> bg, bn-IN, bs, ca, de-AT, de-CH, dsb, el, es-PE, fur, gl-ES, hr, hsb, hu, id, lo, lt, mk, mn, nn, rm, ro, sl, sr, sr-Latn, tr, vi
+> bg, bn-IN, bs, de-AT, de-CH, dsb, el, es-PE, fur, gl-ES, hr, hsb, hu, id, lo, lt, mk, mn, nn, rm, ro, sl, sr, sr-Latn, tr, vi
 
 We always welcome your contributions!
 
@@ -38,7 +38,7 @@ If you are familiar with GitHub operations, follow the procedures described in t
 If you are not,
 
 * Save your locale data on the [Gist](http://gist.github.com).
-* Open an issue with reference to the the Gist you created.
+* Open an issue with reference to the Gist you created.
 
 ### Fetch the `rails-18n` repository
 
@@ -94,3 +94,14 @@ If you are ready, push the repository into the Github and send us a pull request
 
 We will do the formality check and publish it as quick as we can.
 
+## License
+
+[MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)
+
+## Contributors
+
+See [https://github.com/svenfuchs/rails-i18n/contributors](https://github.com/svenfuchs/rails-i18n/contributors)
+
+## Special thanks
+
+[Tsutomu Kuroda](https://github.com/kuroda) for untiringly taking care of this repository, issues and pull requests

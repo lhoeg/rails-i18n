@@ -1,4 +1,4 @@
-# Arabic translations for Ruby on Rails 
+# Arabic translations for Ruby on Rails
 # by Rida Al Barazi (me@rida.me)
 # updated by Ahmed Hazem (nardgo@gmail.com)
 # Rails 3 edit by rbjarnason
@@ -10,11 +10,51 @@
       short: "%e %b"
       long: "%B %e, %Y"
 
-    day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
-    abbr_day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
+    day_names:
+      - الأحد
+      - الإثنين
+      - الثلاثاء
+      - الأربعاء
+      - الخميس
+      - الجمعة
+      - السبت
+    abbr_day_names:
+      - الأحد
+      - الإثنين
+      - الثلاثاء
+      - الأربعاء
+      - الخميس
+      - الجمعة
+      - السبت
 
-    month_names: [~, يناير, فبراير, مارس, ابريل, مايو, يونيو, يوليو, اغسطس, سبتمبر, اكتوبر, نوفمبر, ديسمبر]
-    abbr_month_names: [~, يناير, فبراير, مارس, ابريل, مايو, يونيو, يوليو, اغسطس, سبتمبر, اكتوبر, نوفمبر, ديسمبر]
+    month_names:
+      - ~
+      - يناير
+      - فبراير
+      - مارس
+      - ابريل
+      - مايو
+      - يونيو
+      - يوليو
+      - اغسطس
+      - سبتمبر
+      - اكتوبر
+      - نوفمبر
+      - ديسمبر
+    abbr_month_names:
+      - ~
+      - يناير
+      - فبراير
+      - مارس
+      - ابريل
+      - مايو
+      - يونيو
+      - يوليو
+      - اغسطس
+      - سبتمبر
+      - اكتوبر
+      - نوفمبر
+      - ديسمبر
     order:
       - :day
       - :month
@@ -183,4 +223,4 @@
         <<: *errors_messages
 
       full_messages:
-        format: "%{attribute}%{message}"
+        format: "%{attribute} %{message}"

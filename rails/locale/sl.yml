@@ -1,6 +1,6 @@
 # Slovenian language localization (sl-sl)
 # by Miha Rebernik <miha@rebernik.info>
-sl:  
+sl:
   date:
     formats:
       default: "%d.%m.%Y"
@@ -8,11 +8,51 @@ sl:
       long: "%d. %b %Y"
       simple: "%d. %b %Y"
 
-    day_names: [nedelja, ponedeljek, torek, sreda, četrtek, petek, sobota]
-    abbr_day_names: [ned, pon, tor, sre, čet, pet, sob]
+    day_names:
+      - nedelja
+      - ponedeljek
+      - torek
+      - sreda
+      - četrtek
+      - petek
+      - sobota
+    abbr_day_names:
+      - ned
+      - pon
+      - tor
+      - sre
+      - čet
+      - pet
+      - sob
 
-    month_names: [~, januar, februar, marec, april, maj, junij, julij, avgust, september, oktober, november, december]
-    abbr_month_names: [~, jan, feb, mar, apr, maj, jun, jul, avg, sep, okt, nov, dec]
+    month_names:
+      - ~
+      - januar
+      - februar
+      - marec
+      - april
+      - maj
+      - junij
+      - julij
+      - avgust
+      - september
+      - oktober
+      - november
+      - december
+    abbr_month_names:
+      - ~
+      - jan
+      - feb
+      - mar
+      - apr
+      - maj
+      - jun
+      - jul
+      - avg
+      - sep
+      - okt
+      - nov
+      - dec
     order:
       - :day
       - :month
@@ -24,7 +64,7 @@ sl:
       short: "%d. %b ob %H:%M"
       long: "%d. %B, %Y ob %H:%M"
       simple: "%d. %B %Y ob %H:%M"
-      
+
     am: "dopoldan"
     pm: "popoldan"
 
@@ -77,7 +117,7 @@ sl:
        delimiter: "."
        # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
        precision: 2
- 
+
      # Used in number_to_currency()
      currency:
        format:
@@ -88,15 +128,15 @@ sl:
          separator: ","
          delimiter: "."
          precision: 2
-   
+
      # Used in number_to_percentage()
      percentage:
        format:
          # These three are to override number.format and are optional
-         # separator: 
+         # separator:
          delimiter: ""
-         # precision: 
-   
+         # precision:
+
      # Used in number_to_precision()
      precision:
        format:
@@ -104,12 +144,12 @@ sl:
          # separator:
          delimiter: ""
          # precision:
-   
+
      # Used in number_to_human_size()
      human:
        format:
          # These three are to override number.format and are optional
-         # separator: 
+         # separator:
          delimiter: ""
          precision: 1
        storage_units:
@@ -169,7 +209,7 @@ sl:
        two:   "2 meseca"
        few:   "%{count} mesece"
        other: "%{count} mesecev"
-     almost_x_years:      
+     almost_x_years:
        one:   "skoraj 1 leto"
        two:   "skoraj 2 leti"
        few:   "skoraj %{count} leta"

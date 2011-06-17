@@ -1,4 +1,4 @@
-# Hebrew translations for Ruby on Rails 
+# Hebrew translations for Ruby on Rails
 # by Dotan Nahum (dipidi@gmail.com)
 # Rails 3 update by rbjarnason
 
@@ -10,11 +10,51 @@
       long: "%B %e, %Y"
       only_day: "%e"
 
-    day_names: [ראשון, שני, שלישי, רביעי, חמישי, שישי, שבת]
-    abbr_day_names: [א, ב, ג, ד, ה, ו, ש]
+    day_names:
+      - ראשון
+      - שני
+      - שלישי
+      - רביעי
+      - חמישי
+      - שישי
+      - שבת
+    abbr_day_names:
+      - א
+      - ב
+      - ג
+      - ד
+      - ה
+      - ו
+      - ש
 
-    month_names: [~, ינואר, פברואר, מרץ, אפריל, מאי, יוני, יולי, אוגוסט, ספטמבר, אוקטובר, נובמבר, דצמבר]
-    abbr_month_names: [~, יאנ, פב, מרץ, אפר, מאי, יונ, יול, אוג, ספט, אוק, נוב, דצ]
+    month_names:
+      - ~
+      - ינואר
+      - פברואר
+      - מרץ
+      - אפריל
+      - מאי
+      - יוני
+      - יולי
+      - אוגוסט
+      - ספטמבר
+      - אוקטובר
+      - נובמבר
+      - דצמבר
+    abbr_month_names:
+      - ~
+      - יאנ
+      - פב
+      - מרץ
+      - אפר
+      - מאי
+      - יונ
+      - יול
+      - אוג
+      - ספט
+      - אוק
+      - נוב
+      - דצ
     order:
       - :day
       - :month
@@ -169,7 +209,7 @@
       less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
       odd: "חייב להיות אי זוגי"
       even: "חייב להיות זוגי"
-      
+
   activerecord:
     errors:
       template:
@@ -184,4 +224,4 @@
         <<: *errors_messages
 
       full_messages:
-        format: "%{attribute}%{message}"
+        format: "%{attribute} %{message}"

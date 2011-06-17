@@ -11,28 +11,68 @@ nl:
       long: "%e %B %Y"
       only_day: "%e"
 
-    day_names: [zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag]
-    abbr_day_names: [zon, maa, din, woe, don, vri, zat]
+    day_names:
+      - zondag
+      - maandag
+      - dinsdag
+      - woensdag
+      - donderdag
+      - vrijdag
+      - zaterdag
+    abbr_day_names:
+      - zon
+      - maa
+      - din
+      - woe
+      - don
+      - vri
+      - zat
 
-    month_names: [~, januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december]
-    abbr_month_names: [~, jan, feb, mar, apr, mei, jun, jul, aug, sep, okt, nov, dec]
+    month_names:
+      - ~
+      - januari
+      - februari
+      - maart
+      - april
+      - mei
+      - juni
+      - juli
+      - augustus
+      - september
+      - oktober
+      - november
+      - december
+    abbr_month_names:
+      - ~
+      - jan
+      - feb
+      - mar
+      - apr
+      - mei
+      - jun
+      - jul
+      - aug
+      - sep
+      - okt
+      - nov
+      - dec
     order:
       - :day
       - :month
       - :year
 
-  time: 
-    formats: 
+  time:
+    formats:
       default: "%a %d %b %Y %H:%M:%S %Z"
       short: "%d %b %H:%M"
-      long: "%d %B %Y %H:%M"            
+      long: "%d %B %Y %H:%M"
       time: "%H:%M"
       only_second: "%S"
     am: "'s ochtends"
     pm: "'s middags"
 
-  support: 
-    array: 
+  support:
+    array:
       words_connector: ", "
       two_words_connector: " en "
       last_word_connector: " en "
@@ -113,16 +153,16 @@ nl:
       x_days:
         one:   "1 dag"
         other: "%{count} dagen"
-      about_x_months: 
+      about_x_months:
         one: "ongeveer \xC3\xA9\xC3\xA9n maand"
         other: "ongeveer %{count} maanden"
       x_months:
         one:   "1 maand"
         other: "%{count} maanden"
-      about_x_years: 
+      about_x_years:
         one: "ongeveer \xC3\xA9\xC3\xA9n jaar"
         other: "ongeveer %{count} jaar"
-      over_x_years: 
+      over_x_years:
         one: "meer dan \xC3\xA9\xC3\xA9n jaar"
         other: "meer dan %{count} jaar"
       almost_x_years:
