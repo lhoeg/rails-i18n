@@ -4,6 +4,7 @@
 #  - Sebastien Grosjean - ZenCocoon.com
 #  - Bruno Michel - http://github.com/nono
 #  - Tsutomu Kuroda - http://github.com/kuroda (t-kuroda@oiax.jp)
+# Emended by Benjamin des Gachons and Patrick Chew : <http://www.fitima.org/docs/fiche.pdf>
 
 fr:
   date:
@@ -73,36 +74,36 @@ fr:
       half_a_minute: "une demi-minute"
       less_than_x_seconds:
         zero:  "moins d'une seconde"
-        one:   "moins d'une seconde"
-        other: "moins de %{count} secondes"
+        one:   "moins d'une seconde"
+        other: "moins de %{count} secondes"
       x_seconds:
-        one:   "1 seconde"
-        other: "%{count} secondes"
+        one:   "1 seconde"
+        other: "%{count} secondes"
       less_than_x_minutes:
-        zero:  "moins d'une minute"
-        one:   "moins d'une minute"
-        other: "moins de %{count} minutes"
+        zero:  "moins d'une minute"
+        one:   "moins d'une minute"
+        other: "moins de %{count} minutes"
       x_minutes:
-        one:   "1 minute"
-        other: "%{count} minutes"
+        one:   "1 minute"
+        other: "%{count} minutes"
       about_x_hours:
         one:   "environ une heure"
-        other: "environ %{count} heures"
+        other: "environ %{count} heures"
       x_days:
-        one:   "1 jour"
-        other: "%{count} jours"
+        one:   "1 jour"
+        other: "%{count} jours"
       about_x_months:
         one:   "environ un mois"
-        other: "environ %{count} mois"
+        other: "environ %{count} mois"
       x_months:
-        one:   "1 mois"
-        other: "%{count} mois"
+        one:   "1 mois"
+        other: "%{count} mois"
       about_x_years:
         one:   "environ un an"
-        other: "environ %{count} ans"
+        other: "environ %{count} ans"
       over_x_years:
         one:   "plus d'un an"
-        other: "plus de %{count} ans"
+        other: "plus de %{count} ans"
       almost_x_years:
         one:   "presqu'un an"
         other: "presque %{count} ans"
@@ -167,8 +168,6 @@ fr:
       words_connector: ", "
       two_words_connector: " et "
       last_word_connector: " et "
-    select:
-      prompt: "Veuillez sélectionner"
 
   helpers:
     select:
@@ -178,8 +177,8 @@ fr:
       update: "Modifier ce(tte) %{model}"
       submit: "Enregistrer ce(tte) %{model}"
 
-  errors:
-    format: "Le %{attribute} %{message}"
+  errors: &errors
+    format: "%{attribute} %{message}"
     messages: &errors_messages
       inclusion: "n'est pas inclus(e) dans la liste"
       exclusion: "n'est pas disponible"
@@ -208,17 +207,16 @@ fr:
       even: "doit être pair"
       taken: "n'est pas disponible"
       record_invalid: "La validation a échoué : %{errors}"
+
     template: &errors_template
       header:
         one:   "Impossible d'enregistrer ce(tte) %{model} : 1 erreur"
         other: "Impossible d'enregistrer ce(tte) %{model} : %{count} erreurs"
-      body: "Veuillez vérifier les champs suivants : "
+      body: "Veuillez vérifier les champs suivants : "
 
+  activemodel:
+    errors:
+      <<: *errors
   activerecord:
     errors:
-      messages:
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
+      <<: *errors

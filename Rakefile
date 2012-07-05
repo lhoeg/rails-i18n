@@ -1,10 +1,8 @@
 require 'rake'
 require 'rake/testtask'
-
 require 'rbconfig'
+require 'yaml'
 
-desc 'Run all tests by default'
-task :default => :test
 task :test => 'test:all'
 
 namespace :test do
@@ -14,3 +12,26 @@ namespace :test do
     system(ruby, File.dirname(__FILE__) + '/rails/test/structure.rb')
   end
 end
+
+require 'rspec/core'
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = FileList['spec/**/*_spec.rb']
+end
+
+RSpec::Core::RakeTask.new("spec:unit") do |spec|
+  spec.pattern = 'spec/unit/**/*_spec.rb'
+end
+
+RSpec::Core::RakeTask.new("spec:integration") do |spec|
+  spec.pattern = 'spec/integration/**/*_spec.rb'
+end
+
+RSpec::Core::RakeTask.new(:rcov) do |spec|
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.rcov = true
+end
+
+require 'i18n-spec/tasks' # needs to be loaded after rspec
+
+task :default => :spec
