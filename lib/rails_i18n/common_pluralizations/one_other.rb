@@ -1,16 +1,17 @@
-# Used in Hungarian
+# Used as "default" pluralization rule
+
 module RailsI18n
   module Pluralization
-    module OnlyOne
+    module OneOther
       def self.rule
-        Proc.new { :one }
+        lambda { |n| n == 1 ? :one : :other }
       end
 
       def self.with_locale(locale)
         { locale => {
             :'i18n' => {
               :plural => {
-                :keys => [:one],
+                :keys => [:one, :other],
                 :rule => rule }}}}
       end
     end

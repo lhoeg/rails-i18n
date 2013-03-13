@@ -1,3 +1,34 @@
+## 0.7.2 (2012-12-28)
+ - Remove spurious `mis` from Welsh month names
+ - Add OneOther default pluralization rule and create corresponding locale pluralization files
+ - Add pluralization files for locales with region
+ - Update Persian (fa) translation
+
+## 0.7.1 (2012-11-24)
+ - Update Peruvian Spanish (es-PE) translation
+ - Fix pluralization rules for OneTwoOther
+ - Fix pluralization rules for Hungarian (hu)
+ - Update Japanese (ja) translation
+ - Fix and complete translations of Macedonian (mk), Cyrillic Serbian (sr) and Serbo-Croatian (scr)
+
+## 0.7.0 (2012-10-23)
+ - Remove Swiss German (gsw-CH) as a duplicate of de-CH
+ - Remove en-US
+ - Remove region code from bn-IN, gl-ES, pt-PT and sv-SE
+ - Move iso-639-2 locales into their own directory
+ - Add pluralization rule for Upper Sorbian
+ - Fix grammar mistakes on Bulgarian (bg) translation
+ - Add Latin American Spanish (es-419) translation
+
+## 0.6.6 (2012-09-07)
+ - added Uzbek (uz) translation
+ - added Swiss Italian (it-CH) translation
+ - fixed Swiss German (de-CH) translation
+ - added Polish (pl) transliteration
+ - fixed Greek (el) translation
+ - added Nepali (ne) translation
+ - fixed Argentina Spanish (es-AR) translation
+
 ## 0.6.5 (2012-07-02)
  - fixed Icelandic translation
  - fixed Portuguese translation
